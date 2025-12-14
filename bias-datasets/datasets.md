@@ -165,3 +165,7 @@ https://www.emergentmind.com/topics/flores-200-benchmark-dataset
 
 20. REDDIT BIAS
 [https://github.com/umanlp/RedditBias](https://github.com/umanlp/RedditBias)
+
+21. SART is a sentiment analysis dataset built from Romanian-language tweets annotated into three classes: positive, negative, and neutral. It contains 3,900 instances, evenly distributed with 1,300 tweets per class, and is commonly used as a benchmark for sentiment analysis models in Romanian.
+Link for 21. and 22. : https://github.com/Alegzandra/KES-2023/tree/main/datasets . Reference: Alexandra Ciobotaru & Liviu Dinu (2023):  SART & COVIDSentiRo: Datasets for Sentiment Analysis Applied to Analyzing COVID-19 Vaccination Perception in Romanian Tweets
+22. COVIDSentiRo is a larger corpus of Romanian tweets related to COVID-19 vaccination, collected between January 2021 and February 2022. The dataset includes 19,320 tweets labeled with the same three sentiment classes and is used to analyze public perception of vaccination on social media.
