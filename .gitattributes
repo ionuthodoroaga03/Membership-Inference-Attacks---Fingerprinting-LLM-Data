@@ -1,0 +1,2 @@
+/data/EmoLit/trn.tsv filter=lfs diff=lfs merge=lfs -text
+data/EmoLit/trn.tsv filter=lfs diff=lfs merge=lfs -text
