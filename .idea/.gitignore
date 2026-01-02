@@ -3,3 +3,13 @@
 /workspace.xml
 # Editor-based HTTP Client requests
 /httpRequests/
+/copilot.data.migration.agent.xml
+/copilot.data.migration.ask2agent.xml
+/copilot.data.migration.edit.xml
+/copilotDiffState.xml
+/MIA-Fingerprinting-LLM-Data.iml
+/misc.xml
+/modules.xml
+/inspectionProfiles/profiles_settings.xml
+/inspectionProfiles/Project_Default.xml
+/vcs.xml
