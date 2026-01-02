@@ -1,0 +1,3 @@
+finish initial mapping of remaining 3 data sets from data/ into labels
+map labels so that they are the same across the 5 datasets (probably will be 5 labels, as that
+is the lowes number -> found in SMED dataset)
