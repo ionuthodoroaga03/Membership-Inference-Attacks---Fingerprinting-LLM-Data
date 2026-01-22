@@ -45,9 +45,9 @@ def merge_goemotions_files(input_dir: str, output_path: str, files: list = None)
             df = pd.read_csv(filepath)
             df['_source_file'] = filename  # Track which file it came from
             all_dfs.append(df)
-            print(f"  ✓ {filename}: {len(df)} rows, {len(df.columns)} columns")
+            print(f" {filename}: {len(df)} rows, {len(df.columns)} columns")
         else:
-            print(f"  ✗ {filename}: FILE NOT FOUND")
+            print(f" {filename}: FILE NOT FOUND")
     
     if not all_dfs:
         print("\nERROR: No files loaded!")
@@ -56,12 +56,12 @@ def merge_goemotions_files(input_dir: str, output_path: str, files: list = None)
     # Merge all DataFrames
     merged_df = pd.concat(all_dfs, ignore_index=True)
     
-    # Remove duplicate rows if any (based on text column)
-    if 'text' in merged_df.columns:
-        original_len = len(merged_df)
-        merged_df = merged_df.drop_duplicates(subset=['text'], keep='first')
-        if len(merged_df) < original_len:
-            print(f"\n  Removed {original_len - len(merged_df)} duplicate rows")
+    # # Remove duplicate rows if any (based on text column)
+    # if 'text' in merged_df.columns:
+    #     original_len = len(merged_df)
+    #     merged_df = merged_df.drop_duplicates(subset=['text'], keep='first')
+    #     if len(merged_df) < original_len:
+    #         print(f"\n  Removed {original_len - len(merged_df)} duplicate rows")
     
     print()
     print("="*60)

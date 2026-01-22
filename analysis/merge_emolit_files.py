@@ -27,7 +27,7 @@ def merge_emolit_files(input_dir: str, output_path: str, files: list = None) -> 
     
     # Default files if not specified
     if files is None:
-        files = ['gold.tsv', 'tst.tsv', 'val.tsv']
+        files = ['gold.tsv', 'tst.tsv', 'val.tsv', 'trn.tsv']
     
     all_dfs = []
     
@@ -45,9 +45,9 @@ def merge_emolit_files(input_dir: str, output_path: str, files: list = None) -> 
             df = pd.read_csv(filepath, sep='\t')
             df['split'] = filename.replace('.tsv', '')  # Add split column (gold, tst, trn)
             all_dfs.append(df)
-            print(f"  ✓ {filename}: {len(df)} rows, {len(df.columns)} columns")
+            print(f" {filename}: {len(df)} rows, {len(df.columns)} columns")
         else:
-            print(f"  ✗ {filename}: FILE NOT FOUND")
+            print(f"  {filename}: FILE NOT FOUND")
     
     if not all_dfs:
         print("\nERROR: No files loaded!")
@@ -73,7 +73,7 @@ def merge_emolit_files(input_dir: str, output_path: str, files: list = None) -> 
         merged_df.to_csv(output_path, index=False)
     
     print()
-    print(f"✓ Saved to: {output_path}")
+    print(f" Saved to: {output_path}")
     
     return merged_df
 
@@ -85,7 +85,7 @@ if __name__ == "__main__":
     parser.add_argument('--output', '-o', type=str, required=True,
                         help='Output file path (TSV or CSV)')
     parser.add_argument('--files', '-f', type=str, nargs='+', 
-                        default=['gold.tsv', 'tst.tsv', 'val.tsv'],
+                        default=['gold.tsv', 'tst.tsv', 'val.tsv', 'trn.tsv'],
                         help='Specific files to merge (default: gold.tsv tst.tsv val.tsv)')
     
     args = parser.parse_args()
