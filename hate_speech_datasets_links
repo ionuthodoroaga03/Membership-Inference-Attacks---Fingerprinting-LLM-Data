@@ -1,0 +1,7 @@
+Hate speech datasets:
+
+1. Civil comments: https://huggingface.co/datasets/google/civil_comments
+2. tweet_eval: https://huggingface.co/datasets/cardiffnlp/tweet_eval -> sunt mai multe, am lucrat cu subdatasetul hate: https://huggingface.co/datasets/cardiffnlp/tweet_eval/viewer/hate
+3. tdavidson/hate_speech_offensive : https://huggingface.co/datasets/tdavidson/hate_speech_offensive
+4. jigsaw: https://huggingface.co/datasets/google/jigsaw_toxicity_pred
+5. ethos: https://huggingface.co/datasets/iamollas/ethos
