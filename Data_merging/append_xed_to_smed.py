@@ -4,7 +4,7 @@ import pandas as pd
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = PROJECT_ROOT / "data"
-OUTPUT_DIR = DATA_DIR / "merged"
+OUTPUT_DIR = DATA_DIR / "mapped_label_data/9_labels"
 OUTPUT_FILE = OUTPUT_DIR / "XED_and_SMED.csv"
 
 XED_PATH = DATA_DIR / "XED" / "en-annotated.tsv"
