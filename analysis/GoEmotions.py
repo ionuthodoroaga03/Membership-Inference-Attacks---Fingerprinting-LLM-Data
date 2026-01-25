@@ -75,3 +75,11 @@ df_mapping.to_csv(output_path, index=False)
 
 print(f"\nMapping saved successfully to: {output_path}")
 print(df_mapping)
+
+# Check for duplicate text entries
+num_duplicates = df_all.duplicated(subset=['text']).sum()
+
+if num_duplicates > 0:
+    print(f" Warning: Found {num_duplicates} duplicate rows based on text!")
+else:
+    print(" Verified: All sentences are unique.")

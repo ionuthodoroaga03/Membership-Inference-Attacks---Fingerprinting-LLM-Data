@@ -63,3 +63,18 @@ df_mapping.to_csv(output_path, index=False)
 
 print(f"\nMapping saved successfully to: {output_path}")
 print(df_mapping)
+
+# Assuming the text column is named 'text' (check your CSV header)
+# If the column name is different, replace 'text' with the actual name
+text_col = 'sentence'
+
+if text_col in df.columns:
+    actual_unique = df[text_col].nunique()
+    total_rows = len(df)
+
+    if actual_unique < total_rows:
+        print(f"Duplicates found: {total_rows - actual_unique}")
+    else:
+        print(" Success: The file is truly unique.")
+else:
+    print(f"Could not check uniqueness: Column '{text_col}' not found.")

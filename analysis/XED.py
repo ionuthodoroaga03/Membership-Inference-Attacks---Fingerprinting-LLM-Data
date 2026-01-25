@@ -64,3 +64,13 @@ df_mapping.to_csv(output_path, index=False)
 
 print(f"Mapping saved successfully to: {output_path}")
 print(df_mapping)
+
+# Check for duplicates based on the text column (index 0)
+initial_count = len(df_all)
+df_all = df_all.drop_duplicates(subset=[df_all.columns[0]])
+final_count = len(df_all)
+
+if initial_count != final_count:
+    print(f"  Removed {initial_count - final_count} duplicate rows.")
+else:
+    print("  Data is unique.")

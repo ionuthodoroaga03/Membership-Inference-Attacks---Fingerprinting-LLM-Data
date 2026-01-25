@@ -65,3 +65,16 @@ df_mapping.to_csv(output_path, index=False)
 
 print(f"\nMapping saved successfully to: {output_path}")
 print(df_mapping)
+
+# Check for duplicates based on the text (assuming text is in the first column)
+# If you know the text column name, replace df.columns[0] with 'text'
+text_col_name = df.columns[0]
+
+initial_rows = len(df)
+df = df.drop_duplicates(subset=[text_col_name])
+final_rows = len(df)
+
+if initial_rows != final_rows:
+    print(f" Removed {initial_rows - final_rows} duplicate rows!")
+else:
+    print(" Dataset is already unique.")

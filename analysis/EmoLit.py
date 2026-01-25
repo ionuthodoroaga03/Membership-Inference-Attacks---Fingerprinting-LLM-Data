@@ -64,3 +64,17 @@ df_mapping.to_csv(output_path, index=False)
 
 print(f"\nMapping saved successfully to: {output_path}")
 print(df_mapping)
+
+# Check if there are duplicates based on the ID column
+if 'text' in df_all.columns:
+    initial_count = len(df_all)
+    df_all = df_all.drop_duplicates(subset=['text'])
+    final_count = len(df_all)
+
+    if initial_count != final_count:
+        print(f" Removed {initial_count - final_count} duplicate rows based on 'text'.")
+    else:
+        print(" No duplicates found based on 'text'.")
+else:
+    # Fallback to text if 'tid' is missing
+    df_all = df_all.drop_duplicates(subset=['text'])
