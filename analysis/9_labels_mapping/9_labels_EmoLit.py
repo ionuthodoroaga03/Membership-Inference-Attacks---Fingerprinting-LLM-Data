@@ -20,7 +20,7 @@ MAPPING = {
     "pride": "Happy",
     "relief": "Happy",
     "admiration": "Happy",
-    "nostalgia": "Sad",         # Kept your change
+    "nostalgia": "Sad",
     "sadness": "Sad",
     "despair": "Sad",
     "disappointment": "Sad",
