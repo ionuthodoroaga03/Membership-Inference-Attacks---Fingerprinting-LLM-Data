@@ -64,8 +64,6 @@ df_mapping.to_csv(output_path, index=False)
 print(f"\nMapping saved successfully to: {output_path}")
 print(df_mapping)
 
-# Assuming the text column is named 'text' (check your CSV header)
-# If the column name is different, replace 'text' with the actual name
 text_col = 'sentence'
 
 if text_col in df.columns:
