@@ -30,21 +30,27 @@ MAPPING = {
     # --- ANGRY Group ---
     "anger": "Angry",
     "frustration": "Angry",
-    "jealousy": "Angry",  # Hostility/Anger blend
+    "jealousy": "Angry",
 
-    # --- FEAR Group ---
-    "fear": "Fear",
-    "anxiety": "Fear",
+    # --- TRUST Group ---
+    "love": "Trust",       # love implies deep trust
+    "gratitude": "Trust",  # gratitude is rooted in trust toward another
+
+    # --- NEUTRAL Group ---
+    "confusion": "Neutral",   # confusion is low-arousal, non-valenced
+
+    # --- ANTICIPATION Group ---
+    "hope": "Anticipation",
+    "anxiety": "Anticipation",  # anxiety is future-directed tension
 
     # --- DISGUST Group ---
     "disgust": "Disgust",
 
+    # --- FEAR Group ---
+    "fear": "Fear",
+
     # --- SURPRISE Group ---
     "surprise": "Surprise",
-    "confusion": "Surprise",  # Often mapped to Surprise due to cognitive mismatch
-
-    # --- ANTICIPATION Group ---
-    "hope": "Anticipation",  # Future-oriented
 }
 
 print(f"--- STARTING 20-EMOTIONS MAPPING ---")
