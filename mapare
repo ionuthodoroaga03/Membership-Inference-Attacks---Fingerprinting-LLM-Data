@@ -1,0 +1,25 @@
+ZIPS = {
+    "pythia_emotion_classifier_weighted_final (1).zip" : "/content/pythia-emotion-classifier-weighted-final",
+    "MIA_Reference_Model_Base.zip"                 : "/content/pythia-base-linear-probe",
+    "clf_n-1_no_Emolit (1).zip"                        : "/content/clf_n-1_no_EmoLit",
+    "clf_n-1_no_Emotion20 (1).zip"                     : "/content/clf_n-1_no_Emotion20",
+    "clf_n-1_no_GoEmotions (1).zip"                    : "/content/clf_n-1_no_GoEmotions",
+    "clf_n-1_no_XED_SMED (1).zip"                      : "/content/clf_n-1_no_XED_SMED",
+    "clf_single_EmoLit (1).zip"                        : "/content/clf_single_EmoLit",
+    "clf_single_Emotion20 (1).zip"                     : "/content/clf_single_Emotion20",
+    "clf_single_GoEmotions (1).zip"                    : "/content/clf_single_GoEmotions",
+    "clf_single_XED_SMED (1).zip"                      : "/content/clf_single_XED_SMED",
+}
+ZIPS = {
+    "Target_Victim_Model.zip"                        : "/content/pythia-emotion-classifier-weighted-final",
+    "Reference_Frozen_Model.zip"                     : "/content/MIA_Reference_Model_Base",
+    "clf_n-1_no_EmoLit.zip"                         : "/content/clf_n-1_no_EmoLit",
+    "clf_n-1_no_Emotion20.zip"                      : "/content/clf_n-1_no_Emotion20",
+    "clf_n-1_no_GoEmotions.zip"                     : "/content/clf_n-1_no_GoEmotions",
+    "clf_n-1_XED_SMED.zip"                          : "/content/clf_n-1_no_XED_SMED",
+    "clf_single_EmoLit.zip"                         : "/content/clf_single_EmoLit",
+    "clf_single_Emotion20.zip"                      : "/content/clf_single_Emotion20",
+    "clf_single_GoEmotions.zip"                     : "/content/clf_single_GoEmotions",
+    "clf_single_XED_SMED.zip"                       : "/content/clf_single_XED_SMED",
+}
+asta e maparea

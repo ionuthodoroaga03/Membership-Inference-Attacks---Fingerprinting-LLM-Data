@@ -1,2 +1,6 @@
 /.venv
 toxic/
+13_mar_medical_gpt2_experiments.ipynb
+
+# Large data files
+pubmed_split_*.csv

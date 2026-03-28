@@ -1,0 +1,114 @@
+deadlines:
+ECCV 6 saptamani
+neurips mai
+Colas aprilie (nu ne incadram)
+
+
+2 chestii:
+Antrenare LLM (sau SLM) -> e mai grea
+Rulatul metodei BEE pe un set de date -> BEE
+O prezentare; cod; rezultate; un document care sa explice (tech report, nu foarte lung) -> in folder (final exam cu numele)
+Introducere, metodologie, ce am facut, rezultate, referinte
+
+
+transformer say Pythia small.
+
+
+
+
+
+
+weighted class on loss function (because dataset is not balanced) ; there are 100k happy for example, 15k disgust (approximation)
+de vazut exact ce e score -> softmax? (ca si cum as face de mana)
+
+Extract biases for all classes -> https://anonymous.4open.science/r/BEE-07FE/README.md
+For every class of the 9 give a score for all the words;
+
+follow steps for -> https://huggingface.co/datasets/google/civil_comments (they use this in BEE)
+
+AutoModelForSequenceClassification what is this? -> for Marius presentation
+What is the score, how is it computed mathematically? Is it a softmax?
+
+There is a classifier in the BEE code, maybe use that one and don't put own classifier.
+
+pe ce a fost preantrenat, sa nu intervina cu datele noastre
+
+
+Keyword     Angry
+  cried  0.008356
+ stupid  0.003459
+   talk  0.002794
+  wrong -0.004445
+friends -0.008733
+ reason -0.011483
+   lost -0.011996
+  state -0.014160
+ coming -0.014777
+   Lady -0.016423
+
+    Keyword    Angry
+    wrong 0.142574
+      ugh 0.139132
+   French 0.138963
+     hand 0.137580
+    smile 0.137439
+      n’t 0.137045
+  persons 0.136448
+ suddenly 0.135975
+     yeah 0.135610
+     dont 0.134658
+     glad 0.134554
+      Joy 0.134428
+   spirit 0.134374
+      mom 0.134111
+     told 0.134036
+    sense 0.133663
+  amazing 0.133434
+   stupid 0.133353
+     eyes 0.133215
+   friend 0.132832
+     felt 0.132829
+     soul 0.132746
+   reason 0.132647
+  Mothers 0.132562
+  brother 0.132366
+    cried 0.132244
+    state 0.132168
+    power 0.132110
+     King 0.132061
+  finally 0.132018
+     hate 0.131904
+    party 0.131725
+     dear 0.131560
+     Miss 0.131472
+  totally 0.131433
+     dead 0.131409
+   sister 0.131362
+      put 0.131250
+  friends 0.131140
+     stop 0.131096
+      air 0.131005
+      war 0.130997
+    Loves 0.130797
+  English 0.130762
+     wait 0.130762
+     holy 0.130638
+  feeling 0.130530
+     call 0.130496
+    heart 0.130389
+     home 0.130287
+     talk 0.130191
+   master 0.130137
+      lol 0.129973
+    feels 0.129948
+  thought 0.129919
+     Mrs. 0.129909
+     true 0.129898
+      job 0.129803
+     till 0.129599
+ thoughts 0.129466
+      sir 0.129385
+ honestly 0.129377
+
+
+
